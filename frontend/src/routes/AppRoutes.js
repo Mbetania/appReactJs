@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import {Col,Row} from 'react-bootstrap'
-import '../styles/App.css';
 
 const AppRoutes = () => {
     const [value, setValue] = useState(0)
