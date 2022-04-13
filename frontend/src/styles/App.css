@@ -1,4 +1,15 @@
-.App {
+.rowTamanio{
+  height: 70rem;
+  width: 100%
+}
+.rowColor{
+  background-color: rgb(0, 89, 255);
+}
+.rowColorSecond{
+  background-color: rgb(129, 176, 247);
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +46,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
