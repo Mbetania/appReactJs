@@ -1,30 +1,14 @@
-import React, { useEffect, useState } from "react";
-import {Col,Row} from 'react-bootstrap'
+import React from 'react'
+import { BrowserRouter, Route , Routes} from 'react-router-dom'
+import { WelcomeContainer } from '../pages/WelcomeContainer'
 
-const AppRoutes = () => {
-    const [value, setValue] = useState(0)
-
-    const handleChange = () => {
-        setValue(value+1)
-    }
-
-    useEffect(() => {
-        console.log('value: ',value)
-    }, [value])
-    
-
-
+export const AppRoutes = () => {
     return (
-        <>
-            <Row className='rowTamanio'>
-                <Col className="rowColor" xs={4}>
-                </Col>
-                <Col className="rowColorSecond" xs={8}>
-                </Col>
-            </Row>
-        
-        </>
-    );
-};
+    <BrowserRouter>
+        <Routes>
+            <Route path='welcome/*' element={ <WelcomeContainer/>}/>
+        </Routes>
 
-export default AppRoutes;
+    </BrowserRouter>
+    )
+}
