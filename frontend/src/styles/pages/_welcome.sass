@@ -1,17 +1,60 @@
+
+
 .fondo-principal
         height: 100vh
         width: 100vw
         position: fixed
 
-div
-    position: relative
-    &h2
-        z-index: 1
-    &h3    
 
-.w-container
-    width: 70%
-    height: 100vh
-    left: 30%
-    position: relative
-    background-color: #00000069
+// ⁡⁢⁢⁣/-- 𝘴𝘢𝘴𝘴 𝘸𝘦𝘭𝘤𝘰𝘮𝘦-𝘤𝘰𝘯𝘵𝘢𝘪𝘯𝘦𝘳--/⁡
+div
+    &.w-container
+        width: 70%
+        height: 100vh
+        overflow: hidden
+        left: 30%
+        position: relative
+        background-color: #00000069
+        h2
+            z-index: 1
+        h3    
+
+// ⁡⁢⁢⁣/--𝘴𝘢𝘴𝘴 𝘞𝘦𝘭𝘤𝘰𝘮𝘦--/⁡
+div
+    &.welcome
+        position: relative
+        width: 60ch
+        height: 30rem
+        h2
+            color: $colorPrincipal
+            position: absolute
+            left: 5rem
+            top: 10%
+        h3
+            position: absolute
+            bottom: 25%
+            color: $colorPrincipal
+            left: -2rem
+        .name-title
+            position: absolute
+            color: $colorPrincipal
+            top: 85%
+            left: 13rem
+
+//⁡⁡⁢⁢⁣ /--𝘴𝘢𝘴𝘴 𝘞𝘈𝘯𝘪𝘮𝘢𝘵𝘪𝘰𝘯--/⁡
+
+div
+    &.w-animation
+        left: 40%
+        border-radius: 5rem
+        width: 35%
+        height: 40vh
+        top: 10%
+        background: #fff
+        position: relative
+    .parent[data-isopen='true']
+        width: 400px,
+        height: 200px
+
+
+

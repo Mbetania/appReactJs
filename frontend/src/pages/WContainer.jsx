@@ -1,5 +1,6 @@
 import React from 'react'
-import { Button, Col, Container, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
+import { WAnimation } from './WAnimation'
 import { Welcome } from './Welcome'
 
 export const WContainer = () => {
@@ -10,6 +11,7 @@ return (
                         <Col xs={1}></Col>
                         <Col xs={11}>
                             <Welcome/>
+                            <WAnimation/>
                         </Col>
                     </Row>
         </Container>
