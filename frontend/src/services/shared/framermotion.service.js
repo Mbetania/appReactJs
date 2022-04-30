@@ -16,9 +16,6 @@ export const welcomeImgAnimation = {
         opacity:{ease:'linear'},
         layout:{duration: 0.3}
     }, 
-    // hide:{
-    //     scaleX:2,
-    // },
 }
 
 export const welcomeMotion={
@@ -49,3 +46,31 @@ export const welcomeMotionh3={
         delay:0.5
     }
 }
+
+export const logoPerson ={
+    initial:{
+        opacity:0,
+        scale:0.8,
+        translateX: '0vh',
+        translateY:'-10vh',
+        // translateZ: '50vh'
+    },
+    animate:{
+        opacity:1,
+        scale:1,
+        translateZ:'60vh'
+    },
+    transition:{
+        duration:2,
+        delay:0.5
+    },
+    // hidden:{
+    //     pathLength:0,
+        
+    // },
+    // visible:{
+    //     pathLength:1,
+    // }
+    
+}
+
